@@ -13,7 +13,26 @@
 		2C9A3E271D6AFDA600B8A16D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9A3E251D6AFDA600B8A16D /* Main.storyboard */; };
 		2C9A3E291D6AFDA600B8A16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9A3E281D6AFDA600B8A16D /* Assets.xcassets */; };
 		2C9A3E2C1D6AFDA600B8A16D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9A3E2A1D6AFDA600B8A16D /* LaunchScreen.storyboard */; };
+		2C9A3E341D6AFFE600B8A16D /* FMDBManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9A3E331D6AFFE600B8A16D /* FMDBManager.framework */; };
+		2C9A3E391D6B000200B8A16D /* FMDBManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C9A3E331D6AFFE600B8A16D /* FMDBManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C9A3E401D6B00A400B8A16D /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9A3E3F1D6B00A400B8A16D /* JSONModel.framework */; };
+		2C9A3E411D6B00A800B8A16D /* JSONModel.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C9A3E3F1D6B00A400B8A16D /* JSONModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C9A3E441D6B00C200B8A16D /* StoreMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A3E431D6B00C200B8A16D /* StoreMgr.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2C9A3E371D6AFFF800B8A16D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2C9A3E411D6B00A800B8A16D /* JSONModel.framework in CopyFiles */,
+				2C9A3E391D6B000200B8A16D /* FMDBManager.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2C9A3E191D6AFDA600B8A16D /* testFMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testFMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +45,10 @@
 		2C9A3E281D6AFDA600B8A16D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C9A3E2B1D6AFDA600B8A16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C9A3E2D1D6AFDA600B8A16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9A3E331D6AFFE600B8A16D /* FMDBManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FMDBManager.framework; sourceTree = "<group>"; };
+		2C9A3E3F1D6B00A400B8A16D /* JSONModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSONModel.framework; sourceTree = "<group>"; };
+		2C9A3E421D6B00C200B8A16D /* StoreMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreMgr.h; sourceTree = "<group>"; };
+		2C9A3E431D6B00C200B8A16D /* StoreMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreMgr.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9A3E401D6B00A400B8A16D /* JSONModel.framework in Frameworks */,
+				2C9A3E341D6AFFE600B8A16D /* FMDBManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +67,8 @@
 		2C9A3E101D6AFDA600B8A16D = {
 			isa = PBXGroup;
 			children = (
+				2C9A3E3F1D6B00A400B8A16D /* JSONModel.framework */,
+				2C9A3E331D6AFFE600B8A16D /* FMDBManager.framework */,
 				2C9A3E1B1D6AFDA600B8A16D /* testFMDB */,
 				2C9A3E1A1D6AFDA600B8A16D /* Products */,
 			);
@@ -67,6 +94,8 @@
 				2C9A3E2A1D6AFDA600B8A16D /* LaunchScreen.storyboard */,
 				2C9A3E2D1D6AFDA600B8A16D /* Info.plist */,
 				2C9A3E1C1D6AFDA600B8A16D /* Supporting Files */,
+				2C9A3E421D6B00C200B8A16D /* StoreMgr.h */,
+				2C9A3E431D6B00C200B8A16D /* StoreMgr.m */,
 			);
 			path = testFMDB;
 			sourceTree = "<group>";
@@ -89,6 +118,7 @@
 				2C9A3E151D6AFDA600B8A16D /* Sources */,
 				2C9A3E161D6AFDA600B8A16D /* Frameworks */,
 				2C9A3E171D6AFDA600B8A16D /* Resources */,
+				2C9A3E371D6AFFF800B8A16D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -149,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9A3E441D6B00C200B8A16D /* StoreMgr.m in Sources */,
 				2C9A3E241D6AFDA600B8A16D /* ViewController.m in Sources */,
 				2C9A3E211D6AFDA600B8A16D /* AppDelegate.m in Sources */,
 				2C9A3E1E1D6AFDA600B8A16D /* main.m in Sources */,
@@ -263,7 +294,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = testFMDB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yellfun.testFMDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +310,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = testFMDB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yellfun.testFMDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";

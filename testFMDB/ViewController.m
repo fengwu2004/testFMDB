@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#include "StoreMgr.h"
 
 @interface ViewController ()
 
@@ -15,13 +16,23 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)selector:(id)sender {
+    
+    NSDictionary *dic = @{@"name":@"yanli"};
+    
+    [[StoreMgr sharedInstance] saveDic:dic];
+}
+
+- (IBAction)selector2:(id)sender {
+    
+    NSDictionary *dic = [[StoreMgr sharedInstance] query];
+    
+    NSLog(@"%@-----------", [dic objectForKey:@"name"]);
 }
 
 @end
